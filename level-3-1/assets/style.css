@@ -18,20 +18,15 @@ section{
     border-radius: 10px;
 }
 
-.name-address, .mail-phone, .password-pwconfirm{
-    width: 21em;
+.name-address-wrapper, .email-phone-wrapper, .password-pw-conf-wrapper{
     background-color: #ededed;
+    width: 21em;
     margin-bottom: 1em;
     padding: 1em 2em;
-}
-
-.name-address h2, .mail-phone h2, .password-pwconfirm h2{
-    margin-left: -3.5em;
-    color: #43D1AF;
+    border-radius: 10px;
 }
 
 hgroup{
-
     background-color:#43D1AF;
     color: #fff;
     padding: 1em 0 1em 3em;
@@ -43,20 +38,24 @@ h1, h2{
     font-weight: 400;
 }
 
-.name-address h2::before{
+h2:nth-of-type(1), h2:nth-of-type(2), h2:nth-of-type(3){
+    margin-left: -2.5em;
+    color: #43D1AF;
+}
+
+h2:nth-of-type(1):before{
     content: "1";
 }
 
-.mail-phone h2::before{
+h2:nth-of-type(2)::before{
     content: "2";
 }
 
-.password-pwconfirm h2::before {
+h2:nth-of-type(3)::before {
     content: "3";
 }
 
-
-.name-address h2::before, .mail-phone h2::before, .password-pwconfirm h2::before {
+h2:nth-of-type(1):before, h2:nth-of-type(2)::before, h2:nth-of-type(3)::before{
     color: #fff;
     background-color: #43D1AF;
     padding: 1;
@@ -65,21 +64,20 @@ h1, h2{
     border-radius: 100%;
     display: inline-block;
     text-align: center;
-    margin-right: 0.5em;
+    margin-right: 1em;
 }
-
 
 div {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1em;
 }
 
 input{
     padding: 0.9em 0.5em;
     border: none;
+    border-radius: 5px;
+    margin: 0.5em 0 2em 0;
 }
-
 
 input[type="submit"]{
     background-color: #43D1AF;
@@ -93,6 +91,10 @@ input[type="submit"]{
 input[type="submit"]:hover{
     background-color: #2EBC99;
     cursor: pointer;
+}
+
+label{
+    color: #8a8a8a;
 }
 
 
