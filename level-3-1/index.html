@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Forms-Uebung-Level-3-1</title>
+</head>
+<body>
+    <section>
+        <hgroup>
+        <h1>Sign Up Now!</h1>
+        <p>Sign up and let us know what you think of the site!</p>
+        </hgroup>
+        <form>
+            <section class="name-address">
+                <h2>First Name & Address</h2>
+                <div class="name">
+                    <label for="name">Your full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="address">
+                    <label for="address">Address</label>
+                    <input type="text" id="address">
+                </div>
+                <div>
+            </section>
+            <section class="mail-phone">
+                <h2>E-Mail & Phone</h2>
+                <div class="email">
+                    <label for="email">E-Mail Address</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="phone">
+                    <label for="phone">Phone Number</label>
+                    <input type="number" id="phone">
+                </div>
+                <div>
+            </section>
+            <section class="password-pwconfirm">
+                <h2>Password</h2>
+                <div class="password">
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                </div>
+                <div class="conf-pw">
+                    <label for="conf-pw">Confirm Password</label>
+                    <input type="password" id="conf-pw">
+                </div>
+                <div>
+            </section>
+            <div>
+                <input type="submit" value="Send">
+                <input type="checkbox" name="checkbox" id="checkbox-terms">
+                    <label for="checkbox-terms">You agree to our Terms and Policy</label>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

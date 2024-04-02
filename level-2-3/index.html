@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Forms-Uebung-Level-2-3</title>
+</head>
+<body>
+    <section>
+        <form>
+            <fieldset>
+                <legend>Register Form</legend>
+                <div class="input">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Name">
+                </div>
+                <div class="input">
+                    <label for="surname">Surname</label>
+                    <input type="text" id="surname" placeholder="Surname">
+                </div>
+                <div class="input">
+                    <label for="mail">E-Mail</label>
+                    <input type="email" id="mail" placeholder="email" required>
+                </div>
+            <div>
+                <label>Gender</label>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+            </div>
+            <div>
+                <label for="file">Picture</label>
+                <input type="file" name="pic" id="pic">
+            </div>
+            <div>
+                <label>Country</label>
+                <select name="country" id="country">
+                    <option value="DE">Germany</option>
+                    <option value="FR">France</option>
+                    <option value="US">USA</option>
+                </select>
+            </div>
+            <div>
+                <label for="languages">Preferred Languages</label>
+                <select id="languages" name="languages" size="4" multiple>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JS</option>
+                    <option value="react">React</option>
+                    <p>To chosse more than one use cmd-Key</p>
+                </select>
+            </div>
+            <div>
+                <label>Field of activity</label>
+                <label for="checkbox-hose">IT</label>
+                <input type="checkbox" name="checkbox" id="checkbox-it">
+                <label for="checkbox-hose">Design</label>
+                <input type="checkbox" name="checkbox" id="checkbox-design">
+                <label for="checkbox-hose">Other</label>
+                <input type="checkbox" name="checkbox" id="checkbox-other">
+            </div>
+            <div>
+                <input type="submit" value="submit">
+                <input type="reset" value="cancel">
+            </div>
+        </fieldset>
+        </form>
+    </section>
+</body>
+</html>

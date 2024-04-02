@@ -1,0 +1,43 @@
+:root{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+form{
+    width: 40em;
+    margin: 3em auto;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.names{
+    display: flex;
+    flex-direction: row;
+}
+
+input[id="name"], input[id="lastname"]{
+
+    width: 45%;
+    margin-left: 1em;
+}
+
+input[type="submit"]{
+    background-color: aquamarine;
+}
+
+input[type="submit"]:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+label[for="name"]::after, label[for="mail"]::after, label[for="message"]::after{
+    content: "*";
+    color: red;
+}
